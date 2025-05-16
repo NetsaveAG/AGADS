@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Orbitron', sans-serif;
+}
+
+body {
+  background: #0f0f0f;
+  color: #fff;
+}
+
+header {
+    height: 100vh;
+    background: url(https://www.gran-turismo.com/images/c/i13ynTpBw8HAmb.jpg) no-repeat center center / cover;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 5%;
+}
+
+.header-overlay {
+  background-color: rgba(0, 0, 0, 0.7); /* затемнение */
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #00ff9f;
+}
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  background-color: #000000d9;
+  top: 0%;
+  padding: 2%;
+  z-index: 99999;
+}
+nav ul{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+li{
+  list-style: none;
+}
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #00ff9f;
+}
+
+
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+.main_h2{
+  font-size: 24px;
+  text-align: center;
+}
+
+.car-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.car-item {
+  background: #1a1a1a;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.car-item:hover {
+  transform: scale(1.02);
+}
+
+.car-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.car-item h3 {
+  padding: 15px 10px 5px;
+  font-size: 1.5rem;
+  color: #00ff9f;
+}
+
+.car-item p {
+  padding: 0 15px 15px;
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: #666;
+  margin-top: 40px;
+}
+.about {
+    position: relative;
+  background-image: url('https://wallpaperaccess.com/full/2896346.jpg'); /* высококачественный фон */
+    background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20%;
+  height: 50vh;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  color: #fff;
+  text-align: center;
+  z-index: 1;
+
+}
+.about::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* степень затемнения */
+  z-index: -1;
+}
+.h2_about{
+  font-size: 32px;
+  margin-bottom: 5%;
+}
+.about p{
+  width: 90%;
+  font-size: 22px;
+  margin: 0 auto;
+  color: #00ff9f;
+}
